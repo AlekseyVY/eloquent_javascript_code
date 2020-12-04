@@ -5,8 +5,9 @@
 
 // Can you think of a way to call hasOwnProperty on an object that has its own property by that name?
 
-// let map = {one: true, two: true, hasOwnProperty: true};
+let map = {one: true, two: true, hasOwnProperty: true};
 
-// // Fix this call
-// console.log(map.hasOwnProperty("one"));
-// // → true
+
+// Fix this call
+console.log(Object.hasOwnProperty.call(map, "one"));
+// → true
